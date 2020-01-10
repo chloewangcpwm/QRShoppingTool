@@ -1,0 +1,30 @@
+package com.prod.entities;
+
+import java.util.List;
+
+public class ParkingLot {
+
+	private List<Floor> floors;
+	
+	public Integer findSpot(String carType, String plate) {
+		Integer spotNum=0;
+		if(carType.equals("mediumSize")) {
+			for(Floor floor:floors) {
+				if(floor.getMediumSizeCarsAvail()!=null) {
+					spotNum = floor.getMediumSizeCarsAvail().get(0);
+					floor.getMediumSizeCarsAvail().remove(0);
+					floor.getMediumSizeCarsTaken().add(spotNum);
+					
+				}
+			}
+		}else if()
+		return spotNum;
+	}
+}
+
+tc1 (happy path): car type of medium size and plate number is"xxxxx", return me an availalbe spot number
+tc2 : when there is no spot available for the special car type in the whole parking lot, return 0;
+tc3 : if the first floor has no availalble for the car type, but second floor has one availble, return the correct spot number from second floor
+tc4 : if only the last floor has availablility for the car type, return the last floor
+		
+		

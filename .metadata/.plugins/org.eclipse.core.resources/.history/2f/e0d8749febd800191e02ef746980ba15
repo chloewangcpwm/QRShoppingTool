@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body onload="getLocation()">
+
+<p>Identifying your store location...</p>
+
+<p id="demo"></p>
+
+<script>
+window.onload = function() {
+	  getLocation();
+	};
+	
+var lat;
+var lon;
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+	  lat = position.coords.latitude;
+	  lon = position.coords.longitude;
+	  window.location.replace(window.location.hostname + "/geoLocator/findStore/?lat=" + lat + "&lon=" +lon);
+	}
+
+
+
+</script>
+
+
+</body>
+</html>

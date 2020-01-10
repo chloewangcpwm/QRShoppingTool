@@ -1,0 +1,11 @@
+}catch(Exception e){
+			ErrorLogs anError = new ErrorLogs();
+			anError.setFunction("cashier_updatestatus");
+			StringWriter sw = new StringWriter();
+			PrintWriter pw = new PrintWriter(sw);
+			e.printStackTrace(pw);
+			String exception = sw.toString();
+			anError.setException(exception);
+			errorsRepository.save(anError);
+			return 0;
+		}

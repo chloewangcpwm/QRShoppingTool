@@ -1,0 +1,60 @@
+package com.prod.entities;
+
+import java.util.List;
+
+public class Floor {
+	
+	private Integer floorNum;
+	private List<Integer> mediumSizeCarsAvail;
+	private List<Integer> compactCarsAvail;
+	private List<Integer> motocyclesAvail;
+	private List<Integer> mediumSizeCarsTaken;
+	private List<Integer> compactCarsTaken;
+	private List<Integer> motocyclesTaken;
+	public Integer getFloorNum() {
+		return floorNum;
+	}
+	public void setFloorNum(Integer floorNum) {
+		this.floorNum = floorNum;
+	}
+	public List<Integer> getMediumSizeCarsAvail() {
+		return mediumSizeCarsAvail;
+	}
+	public void setMediumSizeCarsAvail(List<Integer> mediumSizeCarsAvail) {
+		this.mediumSizeCarsAvail = mediumSizeCarsAvail;
+	}
+	public List<Integer> getCompactCarsAvail() {
+		return compactCarsAvail;
+	}
+	public void setCompactCarsAvail(List<Integer> compactCarsAvail) {
+		this.compactCarsAvail = compactCarsAvail;
+	}
+	public List<Integer> getMotocyclesAvail() {
+		return motocyclesAvail;
+	}
+	public void setMotocyclesAvail(List<Integer> motocyclesAvail) {
+		this.motocyclesAvail = motocyclesAvail;
+	}
+	public List<Integer> getMediumSizeCarsTaken() {
+		return mediumSizeCarsTaken;
+	}
+	public void setMediumSizeCarsTaken(List<Integer> mediumSizeCarsTaken) {
+		this.mediumSizeCarsTaken = mediumSizeCarsTaken;
+	}
+	public List<Integer> getCompactCarsTaken() {
+		return compactCarsTaken;
+	}
+	public void setCompactCarsTaken(List<Integer> compactCarsTaken) {
+		this.compactCarsTaken = compactCarsTaken;
+	}
+	public List<Integer> getMotocyclesTaken() {
+		return motocyclesTaken;
+	}
+	public void setMotocyclesTaken(List<Integer> motocyclesTaken) {
+		this.motocyclesTaken = motocyclesTaken;
+	}
+	
+	
+	
+	
+}

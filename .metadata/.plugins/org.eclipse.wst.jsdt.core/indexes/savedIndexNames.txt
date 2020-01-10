@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+/Users/xwang/Documents/workspace-spring-tool-suite-4-4.3.0.RELEASE/SbHibernateShoppingCart/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes

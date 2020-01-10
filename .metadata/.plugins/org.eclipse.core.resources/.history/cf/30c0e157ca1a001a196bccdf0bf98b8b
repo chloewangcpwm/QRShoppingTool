@@ -1,0 +1,8 @@
+package com.prod.entities;
+
+public class Spot {
+
+	private Integer spotNum;
+	private String carType;
+	private String plate;
+}
